@@ -1,0 +1,113 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+}
+
+#particles-js {
+    width: 120%;
+    height: 120%;
+    background-color: #000;
+    background-image: url("");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.navbar-custom {
+    color: white;
+    background-color: transparent;
+}
+
+.active .navbar-custom,
+.nav .navbar-custom:hover,
+.nav .navbar-custom:focus {
+    color: orange;
+    background-color: black;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#navbar-logo {
+    margin: 10px;
+}
+
+.navbar {
+    font-family: 'Black Ops One', cursive;
+    background-color: transparent;
+    border: 0;
+}
+
+.navbar-collapse {
+    border: 0;
+}
+
+.navbar-toggle,
+.icon-bar {
+    border: 1px solid white;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background-color: black;
+}
+
+@media(min-width:768px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: transparent;
+    }
+}
+
+@media(max-width:768px) {
+    .navbar {
+        background-color: black;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+}
