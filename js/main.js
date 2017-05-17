@@ -1,33 +1,19 @@
-//jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
+//jQuery to toggle the navbar on scroll
+$(window).scroll(function () {
+    if ($(".navbar").offset().top > 400) {
+        $(".top-nav:hidden").slideDown("slow");
     } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(".top-nav:visible").slideUp("slow");
     }
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $(document).on('click', 'a.page-scroll', function(event) {
+$(function () {
+    $(document).on('click', 'a.page-scroll', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
-
-//particles.js Background
-window.onload = function() {
-    Particles.init({
-        selector: '.background',
-        connectParticles: true,
-        color: '#ffffff'
-    });
-};
-
-//Shuffle Letters
-$(document).ready(function(){
-    $('h1').shuffleLetters();
 });
