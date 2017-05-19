@@ -17,3 +17,18 @@ $(function () {
         event.preventDefault();
     });
 });
+
+//Intro Wrapper
+$(window).on('load', function(){
+    setTimeout(function(){
+        $('.intro-logo').animate({
+            height: '150px',
+            width: '500px'
+        });
+        setTimeout(function(){
+            $('body').css({
+                overflow: 'auto'
+            });
+        },2000);
+    },1000);
+});
