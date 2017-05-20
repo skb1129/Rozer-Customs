@@ -72,6 +72,7 @@ html {
 #intro {
     height: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 .no-space {
@@ -84,11 +85,30 @@ html {
     width: 100%;
 }
 
-.intro-img-col {
+.intro-img-col-4 {
     float: left;
     height: 100%;
     width: 33.33333333%;
     overflow: hidden;
+}
+
+.intro-img-col-6 {
+    float: left;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+#intro-logo {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 150px;
+    transition: all 0.5s cubic-bezier(.17, .67, .25, 1.02);
 }
 
 .intro-logo {
@@ -97,10 +117,12 @@ html {
     left: 50%;
     width: 100%;
     height: 100%;
-    z-index: 20;
-    background-color: orange;
+    z-index: 4;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #ff8300;
     transform: translate(-50%, -50%);
-    transition: all 1s cubic-bezier(0.76, -0.01, 0.31, 1.4);
+    transition: all 0.5s cubic-bezier(.17, .67, .25, 1.02);
 }
 
 .intro-img {
@@ -109,6 +131,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 100%;
+    opacity: 0.3;
 }
 .about-section {
     height: 100%;
@@ -131,11 +154,15 @@ html {
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
+    #intro-logo {
+        width: 250px;
+    }
 }
 
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
+    display: none;
 }
 
 ::-webkit-scrollbar-track {

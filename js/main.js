@@ -21,10 +21,24 @@ $(function () {
 //Intro Wrapper
 $(window).on('load', function(){
     setTimeout(function(){
-        $('.intro-logo').animate({
-            height: '150px',
-            width: '500px'
-        });
+        if($(window).width() > 767){
+            $('.intro-logo').animate({
+                height: '125px',
+                width: '500px'
+            });
+            $('#intro-logo').animate({
+                width: '+=75px'
+            });
+        }
+        else{
+            $('.intro-logo').animate({
+                height: '75px',
+                width: '275px'
+            });
+            $('#intro-logo').animate({
+                width: '+=25px'
+            });
+        }
         setTimeout(function(){
             $('body').css({
                 overflow: 'auto'
