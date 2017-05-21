@@ -6,6 +6,10 @@ body {
     overflow: hidden;
 }
 
+h1 {
+    opacity: 0;
+}
+
 #particles-js {
     width: 120%;
     height: 120%;
@@ -120,7 +124,7 @@ html {
     z-index: 4;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: #ff8300;
+    background-color: #6aca24;
     transform: translate(-50%, -50%);
     transition: all 0.5s cubic-bezier(.17, .67, .25, 1.02);
 }
@@ -133,6 +137,12 @@ html {
     height: 100%;
     opacity: 0.3;
 }
+
+.intro-img:hover {
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(.17, .67, .25, 1.02);
+}
+
 .about-section {
     height: 100%;
     padding-top: 70px;

@@ -18,10 +18,22 @@ $(function () {
     });
 });
 
+//jQuery for Shuffle Letters
+$(document).ready(function () {
+    $('h1').on('inview', function (event, isInView) {
+        if ($(this).css('opacity') == 0) {
+            if (isInView) {
+                $(this).shuffleLetters();
+                $(this).css('opacity', '1');
+            }
+        }
+    });
+});
+
 //Intro Wrapper
-$(window).on('load', function(){
-    setTimeout(function(){
-        if($(window).width() > 767){
+$(window).on('load', function () {
+    setTimeout(function () {
+        if ($(window).width() > 767) {
             $('.intro-logo').animate({
                 height: '125px',
                 width: '500px'
@@ -29,8 +41,7 @@ $(window).on('load', function(){
             $('#intro-logo').animate({
                 width: '+=75px'
             });
-        }
-        else{
+        } else {
             $('.intro-logo').animate({
                 height: '75px',
                 width: '275px'
@@ -39,10 +50,10 @@ $(window).on('load', function(){
                 width: '+=25px'
             });
         }
-        setTimeout(function(){
+        setTimeout(function () {
             $('body').css({
                 overflow: 'auto'
             });
-        },2000);
-    },1000);
+        }, 2000);
+    }, 1000);
 });
