@@ -8,6 +8,11 @@ body {
 
 h1 {
     opacity: 0;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 #particles-js {
@@ -124,9 +129,46 @@ html {
     z-index: 4;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: #6aca24;
+    background-color: #ff6700;
     transform: translate(-50%, -50%);
     transition: all 0.5s cubic-bezier(.17, .67, .25, 1.02);
+}
+
+.intro-scroll-btn {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    z-index: 3;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translate(-50%, -50%);
+    -webkit-animation: scroll 2s infinite;
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% {top: 85%;}
+    25% {top: 85%;}
+    50% {top: 87%;}
+    75% {top: 87%;}
+    100% {top: 85%;}
+}
+
+@-webkit-keyframes scroll {
+    0% {top: 85%;}
+    25% {top: 85%;}
+    50% {top: 87%;}
+    75% {top: 87%;}
+    100% {top: 85%;}
+}
+
+.fa-angle-double-down {
+    font-size: 40px;
+    color: white;
+}
+
+.fa-angle-double-down:hover {
+    color: #ff6700;
 }
 
 .intro-img {
@@ -166,6 +208,15 @@ html {
     }
     #intro-logo {
         width: 250px;
+    }
+    .fa-angle-double-down {
+        font-size: 60px;
+    }
+    p {
+        font-size: 1.4em;
+    }
+    h1 {
+        font-size: 3em;
     }
 }
 

@@ -12,7 +12,7 @@
 		
 		var options = $.extend({
 			"step"		: 12,			// How many times should the letters be changed
-			"fps"		: 30,			// Frames Per Second
+			"fps"		: 25,			// Frames Per Second
 			"text"		: "", 			// Use this text instead of the contents
 			"callback"	: function(){}	// Run once the animation is complete
 		},prop)
