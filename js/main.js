@@ -65,6 +65,7 @@ $(window).on('load', function () {
     }, 1000);
 });
 
+//Reach Page Top on Reload
 $(window).on('beforeunload', function () {
     "use strict";
     $(window).scrollTop(0);

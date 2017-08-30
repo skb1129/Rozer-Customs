@@ -11,8 +11,16 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    font-size: 1.5em;
+}
+
 p {
     font-size: 1.2em;
+}
+
+.big {
+    font-size: 12em;
 }
 
 #particles-js {
@@ -186,17 +194,31 @@ html {
 }
 
 .about-section {
-    height: 100%;
     padding-top: 70px;
 }
 
+.padlr {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.padtb {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.background-img {
+    background-image: url("../img/5-2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 .services-section {
-    height: 100%;
     padding-top: 70px;
 }
 
 .contact-section {
-    height: 100%;
     padding-top: 70px;
 }
 
@@ -217,6 +239,9 @@ html {
     }
     h1 {
         font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
     }
 }
 
