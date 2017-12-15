@@ -1,13 +1,11 @@
 //jQuery to toggle the navbar on scroll
 $(window).scroll(function () {
-    "use strict";
     if ($(".navbar").offset().top > 400) {
         $(".top-nav:hidden").slideDown("slow");
     } else {
         $(".top-nav:visible").slideUp("slow");
     }
 });
-
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(document).ready(function () {
@@ -16,16 +14,14 @@ $(document).ready(function () {
         e.stopPropagation();
         var target = $(this).attr('href');
         $(target).velocity('scroll', {
-            duration: 'slow',
+            duration: 1000,
             easing: [.17, .67, .25, 1.02]
         });
     });
 });
 
-
 //jQuery for Shuffle Letters
 $(document).ready(function () {
-    "use strict";
     $('h1').on('inview', function (event, isInView) {
         if ($(this).css('opacity') == 0) {
             if (isInView) {
@@ -38,7 +34,6 @@ $(document).ready(function () {
 
 //Intro Wrapper
 $(window).on('load', function () {
-    "use strict";
     setTimeout(function () {
         if ($(window).width() > 767) {
             $('.intro-logo').velocity({
@@ -67,6 +62,5 @@ $(window).on('load', function () {
 
 //Reach Page Top on Reload
 $(window).on('beforeunload', function () {
-    "use strict";
     $(window).scrollTop(0);
 });
