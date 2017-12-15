@@ -1,6 +1,3 @@
-/*jslint browser: true*/
-/*global $, jQuery, alert*/
-
 //jQuery to toggle the navbar on scroll
 $(window).scroll(function () {
     "use strict";
@@ -11,17 +8,20 @@ $(window).scroll(function () {
     }
 });
 
+
 //jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function () {
-    "use strict";
-    $(document).on('click', 'a.page-scroll', function (event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+$(document).ready(function () {
+    $('a.page-scroll').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var target = $(this).attr('href');
+        $(target).velocity('scroll', {
+            duration: 'slow',
+            easing: [.17, .67, .25, 1.02]
+        });
     });
 });
+
 
 //jQuery for Shuffle Letters
 $(document).ready(function () {
@@ -41,21 +41,21 @@ $(window).on('load', function () {
     "use strict";
     setTimeout(function () {
         if ($(window).width() > 767) {
-            $('.intro-logo').animate({
+            $('.intro-logo').velocity({
                 height: '125px',
                 width: '500px'
-            });
-            $('#intro-logo').animate({
+            }, {duration: 500}, [.17, .67, .25, 1.02]);
+            $('#intro-logo').velocity({
                 width: '+=75px'
-            });
+            }, {duration: 500}, [.17, .67, .25, 1.02]);
         } else {
-            $('.intro-logo').animate({
+            $('.intro-logo').velocity({
                 height: '75px',
                 width: '275px'
-            });
-            $('#intro-logo').animate({
+            }, {duration: 500}, [.17, .67, .25, 1.02]);
+            $('#intro-logo').velocity({
                 width: '+=25px'
-            });
+            }, {duration: 500}, [.17, .67, .25, 1.02]);
         }
         setTimeout(function () {
             $('body').css({

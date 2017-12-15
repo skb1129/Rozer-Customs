@@ -125,7 +125,6 @@ html {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     width: 150px;
-    transition: all 0.5s cubic-bezier(.17, .67, .25, 1.02);
 }
 
 .intro-logo {
@@ -139,7 +138,6 @@ html {
     backface-visibility: hidden;
     background-color: #ff6700;
     transform: translate(-50%, -50%);
-    transition: all 0.5s cubic-bezier(.17, .67, .25, 1.02);
 }
 
 .intro-scroll-btn {
@@ -194,6 +192,7 @@ html {
 }
 
 .about-section {
+    height: 100%;
     padding-top: 70px;
 }
 
@@ -215,10 +214,12 @@ html {
 }
 
 .services-section {
+    height: 100%;
     padding-top: 70px;
 }
 
 .contact-section {
+    height: 100%;
     padding-top: 70px;
 }
 
