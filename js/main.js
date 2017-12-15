@@ -22,6 +22,19 @@ $(document).ready(function () {
 
 //jQuery for Shuffle Letters
 $(document).ready(function () {
+    $('.intro-logo').velocity({
+        top: "50%",
+        left: "50%",
+        translateX: "-50%",
+        translateY: "-50%"
+    }, {duration: 0});
+    $('#intro-logo').velocity({
+        top: "45%",
+        left: "50%",
+        translateX: "-50%",
+        translateY: "-50%",
+        opacity: 1
+    }, {duration: 0});
     $('h1').on('inview', function (event, isInView) {
         if ($(this).css('opacity') == 0) {
             if (isInView) {
@@ -60,7 +73,7 @@ $(window).on('load', function () {
     }, 1000);
 });
 
-//Reach Page Top on Reload
-$(window).on('beforeunload', function () {
+
+$(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });

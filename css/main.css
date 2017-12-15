@@ -118,9 +118,7 @@ html {
 
 #intro-logo {
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    opacity: 0;
     z-index: 4;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -129,15 +127,12 @@ html {
 
 .intro-logo {
     position: absolute;
-    top: 50%;
-    left: 50%;
     width: 100%;
     height: 100%;
     z-index: 4;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background-color: #ff6700;
-    transform: translate(-50%, -50%);
 }
 
 .intro-scroll-btn {
@@ -224,11 +219,6 @@ html {
 }
 
 @media(min-width:768px) {
-    .navbar {
-        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        transition: background .5s ease-in-out, padding .5s ease-in-out;
-    }
     #intro-logo {
         width: 250px;
     }
