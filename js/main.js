@@ -39,18 +39,18 @@ $(window).on('load', function () {
             $('.intro-logo').velocity({
                 height: '125px',
                 width: '500px'
-            }, {duration: 500}, [.17, .67, .25, 1.02]);
+            }, [.17, .67, .25, 1.02]);
             $('#intro-logo').velocity({
                 width: '+=75px'
-            }, {duration: 500}, [.17, .67, .25, 1.02]);
+            }, [.17, .67, .25, 1.02]);
         } else {
             $('.intro-logo').velocity({
                 height: '75px',
                 width: '275px'
-            }, {duration: 500}, [.17, .67, .25, 1.02]);
+            }, [.17, .67, .25, 1.02]);
             $('#intro-logo').velocity({
                 width: '+=25px'
-            }, {duration: 500}, [.17, .67, .25, 1.02]);
+            }, [.17, .67, .25, 1.02]);
         }
         setTimeout(function () {
             $('body').css({
