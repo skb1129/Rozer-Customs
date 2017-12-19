@@ -97,7 +97,8 @@ html {
     padding: 0;
 }
 
-.intro-img-row {
+.intro-img-row-1,
+.intro-img-row-2 {
     height: 50%;
     width: 100%;
 }
@@ -234,6 +235,33 @@ html {
     }
     h2 {
         font-size: 2em;
+    }
+}
+
+@media(max-width:767px) {
+    .intro-img-row-1 {
+        height: 40%;
+        width: 100%;
+    }
+    
+    .intro-img-row-2 {
+        height: 60%;
+        width: 100%;
+    }
+
+    .intro-img-col-4 {
+        width: 100%;
+        height: 33.33333333%;
+    }
+    
+    .intro-img-col-6 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .intro-img {
+        width: 100%;
+        height: auto;
     }
 }
 
