@@ -23,6 +23,11 @@ p {
     font-size: 12em;
 }
 
+.footer {
+    margin: 0;
+    font-size: 0.9em;
+}
+
 #particles-js {
     width: 120%;
     height: 120%;
@@ -189,7 +194,7 @@ html {
 }
 
 .about-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 70px;
 }
 
@@ -211,12 +216,12 @@ html {
 }
 
 .services-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 70px;
 }
 
 .contact-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 70px;
 }
 
