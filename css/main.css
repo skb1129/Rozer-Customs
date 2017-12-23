@@ -4,11 +4,14 @@ body {
     color: white;
     background-color: black;
     overflow: hidden;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 h1 {
     opacity: 0;
     font-size: 2em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -25,7 +28,7 @@ p {
 
 .footer {
     margin: 0;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 #particles-js {
@@ -45,6 +48,8 @@ p {
 }
 
 .navbar-custom {
+    font-family: 'Unica One', cursive;
+    font-size: 1.5em;
     color: white;
     background-color: transparent;
 }
@@ -66,7 +71,6 @@ html {
 }
 
 .navbar {
-    font-family: 'Black Ops One', cursive;
     background-color: transparent;
     border: 0;
 }
