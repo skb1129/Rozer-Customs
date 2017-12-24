@@ -73,7 +73,7 @@ $(window).on('load', function () {
     }, 1000);
 });
 
-
+// Reach page top on reload
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
