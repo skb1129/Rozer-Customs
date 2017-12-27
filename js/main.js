@@ -5,6 +5,7 @@ $(window).scroll(function () {
     } else {
         $(".top-nav:visible").slideUp("slow");
     }
+    $('.navbar-collapse').collapse('hide');
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -27,14 +28,18 @@ $(document).ready(function () {
         left: "50%",
         translateX: "-50%",
         translateY: "-50%"
-    }, {duration: 0});
+    }, {
+        duration: 0
+    });
     $('#intro-logo').velocity({
         top: "45%",
         left: "50%",
         translateX: "-50%",
         translateY: "-50%",
         opacity: 1
-    }, {duration: 0});
+    }, {
+        duration: 0
+    });
     $('h1').on('inview', function (event, isInView) {
         if ($(this).css('opacity') == 0) {
             if (isInView) {
@@ -74,6 +79,11 @@ $(window).on('load', function () {
 });
 
 // Reach page top on reload
-$(window).on('beforeunload', function() {
+$(window).on('beforeunload', function () {
     $(window).scrollTop(0);
+});
+
+// Auto-Close Dropdown Menu
+$('.page-scroll').click(function () {
+    $('.navbar-collapse').collapse('hide');
 });
