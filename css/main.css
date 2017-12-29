@@ -70,7 +70,7 @@ p {
 .active .navbar-custom,
 .nav .navbar-custom:hover,
 .nav .navbar-custom:focus {
-    color: orange;
+    color: #ff6700;
     background-color: black;
 }
 
@@ -179,10 +179,10 @@ html {
         top: 85%;
     }
     50% {
-        top: 87%;
+        top: 86%;
     }
     75% {
-        top: 87%;
+        top: 86%;
     }
     100% {
         top: 85%;
@@ -197,22 +197,22 @@ html {
         top: 85%;
     }
     50% {
-        top: 87%;
+        top: 86%;
     }
     75% {
-        top: 87%;
+        top: 86%;
     }
     100% {
         top: 85%;
     }
 }
 
-.glyphicon-menu-down {
+.glyphicon-circle-arrow-down {
     font-size: 30px;
     color: white;
 }
 
-.glyphicon-menu-down:hover {
+.glyphicon-circle-arrow-down:hover {
     color: #ff6700;
 }
 
@@ -270,8 +270,8 @@ html {
     #intro-logo {
         width: 250px;
     }
-    .glyphicon-menu-down {
-        font-size: 50px;
+    .glyphicon-circle-arrow-down {
+        font-size: 40px;
     }
     p {
         font-size: 1.4em;
