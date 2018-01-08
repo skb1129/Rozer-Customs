@@ -11,6 +11,7 @@ footer {
     text-align: center;
     padding-top: 10px;
     background-color: #ff6700;
+    margin-top: 10px;
 }
 
 h1 {
@@ -234,6 +235,10 @@ html {
     text-align: center;
     min-height: 100%;
     padding-top: 70px;
+}
+
+#contact {
+    min-height: 0;
 }
 
 .padlr {
