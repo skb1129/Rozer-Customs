@@ -328,12 +328,15 @@ html {
 }
 
 .overlay {
-    display: none;
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;    
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -346,5 +349,5 @@ html {
 
 .view-img:hover .overlay {
     display: flex;
-    align-items: center;
+    opacity: 1;
 }
