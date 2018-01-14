@@ -88,6 +88,20 @@ $('.page-scroll').click(function () {
     $('.navbar-collapse').collapse('hide');
 });
 
+var images = {
+    cafe_racer: 4,
+    the_bat: 0,
+    the_bull: 0,
+    popstar: 4,
+    ultimate_hulk: 4,
+    gangster: 0,
+    green_hornet: 0,
+    blue_devil: 4,
+    shotgun: 3,
+    foghorn: 0,
+    ironclad: 0
+};
+
 $('.overlay').click(function () {
     var $carousel = $('.carousel-inner:first');
     var imgName = $(this).prev().attr('alt');
