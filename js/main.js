@@ -16,7 +16,7 @@ $(document).ready(function () {
         var target = $(this).attr('href');
         $(target).velocity('scroll', {
             duration: 1000,
-            easing: [.17, .67, .25, 1.02]
+            easing: [0.17, 0.67, 0.25, 1.02]
         });
     });
 });
@@ -57,18 +57,18 @@ $(window).on('load', function () {
             $('.intro-logo').velocity({
                 height: '125px',
                 width: '500px'
-            }, [.17, .67, .25, 1.02]);
+            }, [0.17, 0.67, 0.25, 1.02]);
             $('#intro-logo').velocity({
                 width: '+=75px'
-            }, [.17, .67, .25, 1.02]);
+            }, [0.17, 0.67, 0.25, 1.02]);
         } else {
             $('.intro-logo').velocity({
                 height: '75px',
                 width: '275px'
-            }, [.17, .67, .25, 1.02]);
+            }, [0.17, 0.67, 0.25, 1.02]);
             $('#intro-logo').velocity({
                 width: '+=25px'
-            }, [.17, .67, .25, 1.02]);
+            }, [0.17, 0.67, 0.25, 1.02]);
         }
         setTimeout(function () {
             $('body').css({
@@ -86,4 +86,24 @@ $(window).on('beforeunload', function () {
 // Auto-Close Dropdown Menu
 $('.page-scroll').click(function () {
     $('.navbar-collapse').collapse('hide');
+});
+
+$('.overlay').click(function () {
+    var $carousel = $('.carousel-inner:first');
+    var imgName = $(this).prev().attr('alt');
+    $carousel.empty();
+    $carousel.html(
+        `<div class="item active">
+            <img src="img/${imgName}/1.jpg" alt="${imgName}-1">
+        </div>`
+    );
+    for(var index = 2; index <= images[imgName]; index++) {
+        $carousel.append(
+            `<div class="item">
+                <img src="img/${imgName}/${index}.jpg" alt="${imgName}-${index}">
+            </div>`
+        );
+    }
+    
+    $('#image-modal').modal();
 });

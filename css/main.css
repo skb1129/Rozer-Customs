@@ -345,9 +345,14 @@ html {
     font-size: 2em;
     letter-spacing: 0.2em;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .view-img:hover .overlay {
     display: flex;
     opacity: 1;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
