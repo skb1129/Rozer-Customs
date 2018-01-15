@@ -90,16 +90,16 @@ $('.page-scroll').click(function () {
 
 var images = {
     cafe_racer: 4,
-    the_bat: 0,
-    the_bull: 0,
+    the_bat: 4,
+    the_bull: 4,
     popstar: 4,
     ultimate_hulk: 4,
-    gangster: 0,
-    green_hornet: 0,
+    gangster: 1,
+    green_hornet: 5,
     blue_devil: 4,
     shotgun: 3,
-    foghorn: 0,
-    ironclad: 0
+    foghorn: 4,
+    ironclad: 4
 };
 
 $('.overlay').click(function () {
