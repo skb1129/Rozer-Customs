@@ -1,7 +1,5 @@
 var CACHE_VERSION = 'rozercustoms-v1';
 var CACHE_FILES = [
-	'/',
-	'/index.html',
 	'/img/about1.jpg',
 	'/img/about2.jpg',
 	'/img/about3.jpg',
@@ -16,7 +14,18 @@ var CACHE_FILES = [
 	'/img/gears.png',
 	'/img/background1.jpg',
 	'/img/facebook-logo.png',
-	'/img/navbar-logo.png'
+	'/img/navbar-logo.png',
+	'/img/blue_devil/blue-devil.jpg',
+	'/img/cafe_racer/cafe-racer.jpg',
+	'/img/shotgun/shotgun.jpg',
+	'/img/popstar/popstar.jpg',
+	'/img/the_bat/the-bat.jpg',
+	'/img/ironclad/ironclad.jpg',
+	'/img/the_bull/the-bull.jpg',
+	'/img/gangster/gangster.jpg',
+	'/img/ultimate_hulk/ultimate-hulk.jpg',
+	'/img/green_hornet/green-hornet.jpg',
+	'/img/foghorn/foghorn.jpg',
 ];
 
 self.addEventListener('install', function (event) {
