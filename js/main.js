@@ -102,6 +102,7 @@ var images = {
     ironclad: 4
 };
 
+// Carousel Filler.
 $('.overlay').click(function () {
     var $carousel = $('.carousel-inner:first');
     var imgName = $(this).prev().attr('alt');
@@ -111,13 +112,26 @@ $('.overlay').click(function () {
             <img src="img/${imgName}/1.jpg" alt="${imgName}-1">
         </div>`
     );
-    for(var index = 2; index <= images[imgName]; index++) {
+    for (var index = 2; index <= images[imgName]; index++) {
         $carousel.append(
             `<div class="item">
                 <img src="img/${imgName}/${index}.jpg" alt="${imgName}-${index}">
             </div>`
         );
     }
-    
+
     $('#image-modal').modal();
 });
+
+// Service Worker Register.
+if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('./sw.js')
+        .then(function (registration) {
+            console.log(registration);
+        })
+        .catch(function (e) {
+            console.error(e);
+        })
+} else {
+    console.log('Service Worker is not supported in this browser.');
+}

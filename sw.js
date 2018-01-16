@@ -1,0 +1,56 @@
+var CACHE_VERSION = 'rozercustoms-v1';
+var CACHE_FILES = [
+	'/',
+	'/index.html',
+	'/img/about1.jpg',
+	'/img/about2.jpg',
+	'/img/about3.jpg',
+	'/img/intro-logo.png',
+	'/img/intro1.jpg',
+	'/img/intro2.jpg',
+	'/img/intro3.jpg',
+	'/img/intro4.jpg',
+	'/img/intro5.jpg',
+	'/img/bike-v1.png',
+	'/img/bike-v2.png',
+	'/img/gears.png',
+	'/img/background1.jpg',
+	'/img/facebook-logo.png',
+	'/img/navbar-logo.png'
+];
+
+self.addEventListener('install', function (event) {
+	event.waitUntil(
+		caches.open(CACHE_VERSION).then(function (cache) {
+			return cache.addAll(CACHE_FILES);
+		})
+	);
+});
+
+self.addEventListener('fetch', function (event) {
+	event.respondWith(caches.match(event.request).then(function (response) {
+		if (response !== undefined) {
+			return response;
+		} else {
+			return fetch(event.request).then(function (response) {
+				var responseClone = response.clone();
+				caches.open(CACHE_VERSION).then(function (cache) {
+					cache.put(event.request, responseClone);
+				});
+				return response;
+			});
+		}
+	}));
+});
+
+self.addEventListener('activate', function (event) {
+    event.waitUntil(
+        caches.keys().then(function(keys){
+            return Promise.all(keys.map(function(key, i){
+                if(key !== CACHE_VERSION){
+                    return caches.delete(keys[i]);
+                }
+            }));
+        })
+    );
+});
