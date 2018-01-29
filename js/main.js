@@ -102,7 +102,8 @@ var images = {
     foghorn: 4,
     ironclad: 4,
     rooster: 5,
-    riders: 7
+    riders: 7,
+    boulder: 5
 };
 
 // Carousel Filler.

@@ -28,7 +28,8 @@ var CACHE_FILES = [
 	'/img/foghorn/foghorn.jpg',
 	'/img/dexter/dexter.jpg',
 	'/img/rooster/rooster.jpg',
-	'/img/riders/riders.jpg'
+	'/img/riders/riders.jpg',
+	'/img/boulder/boulder.jpg'
 ];
 
 self.addEventListener('install', function (event) {
