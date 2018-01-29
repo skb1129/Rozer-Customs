@@ -12,7 +12,7 @@ var CACHE_FILES = [
 	'/img/bike-v1.png',
 	'/img/bike-v2.png',
 	'/img/gears.png',
-	'/img/background1.jpg',
+	'/img/background.jpg',
 	'/img/facebook-logo.png',
 	'/img/navbar-logo.png',
 	'/img/blue_devil/blue-devil.jpg',
