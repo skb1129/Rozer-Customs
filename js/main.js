@@ -100,7 +100,8 @@ var images = {
     blue_devil: 4,
     shotgun: 3,
     foghorn: 4,
-    ironclad: 4
+    ironclad: 4,
+    rooster: 5
 };
 
 // Carousel Filler.

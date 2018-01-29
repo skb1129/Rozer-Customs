@@ -26,7 +26,8 @@ var CACHE_FILES = [
 	'/img/ultimate_hulk/ultimate-hulk.jpg',
 	'/img/green_hornet/green-hornet.jpg',
 	'/img/foghorn/foghorn.jpg',
-	'/img/dexter/dexter.jpg'
+	'/img/dexter/dexter.jpg',
+	'/img/rooster/rooster.jpg'
 ];
 
 self.addEventListener('install', function (event) {
