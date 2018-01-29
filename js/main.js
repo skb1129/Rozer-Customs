@@ -89,6 +89,7 @@ $('.page-scroll').click(function () {
 });
 
 var images = {
+    dexter: 3,
     cafe_racer: 4,
     the_bat: 4,
     the_bull: 4,
