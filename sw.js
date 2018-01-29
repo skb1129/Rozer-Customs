@@ -1,4 +1,4 @@
-var CACHE_VERSION = 'rozercustoms-v1';
+var CACHE_VERSION = 'rozercustoms-v1.02';
 var CACHE_FILES = [
 	'/img/about1.jpg',
 	'/img/about2.jpg',
