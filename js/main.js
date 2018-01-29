@@ -103,7 +103,8 @@ var images = {
     ironclad: 4,
     rooster: 5,
     riders: 7,
-    boulder: 5
+    boulder: 5,
+    the_cafe: 5
 };
 
 // Carousel Filler.
