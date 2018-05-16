@@ -18,4 +18,4 @@ I uses many JS libraries:
 And BootstrapCSS too.
 
 ### Inspiration
-The design inspiration for this website came from (HIPLAND MUSIC's Website)[http://hipland.co.jp/].
+The design inspiration for this website came from [HIPLAND MUSIC's Website](http://hipland.co.jp/).
